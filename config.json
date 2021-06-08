@@ -1,19 +1,13 @@
 {
-  "base_url": "https://wutali-nextjs-netlify-blog.netlify.app",
-  "site_title": "Next.js Netlify Blog",
-  "site_description": "Next.js blog template for Netlify",
+  "base_url": "https://guildex.co.jp",
+  "site_title": "合同会社Guildex",
+  "site_description": "「Guildex」は多種多様なスキルを持った集団という意味のGuildと経験のExperienceを掛け合わせた造語で、メンバーと様々なコンテンツを生み出しながら共に多くの経験を積み上げていく集団です。",
   "site_keywords": [
     {
-      "keyword": "Next.js"
+      "keyword": "Guildex"
     },
     {
-      "keyword": "Netlify"
-    },
-    {
-      "keyword": "React"
+      "keyword": "Bmake"
     }
-  ],
-  "posts_per_page": 5,
-  "twitter_account": "@my-account",
-  "github_account": "wutali"
+  ]
 }

@@ -1,8 +1,13 @@
+const path = require('path')
+
 module.exports = ({
   pageExtensions: ["tsx"],
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-    config.module.rules.push(
-      ...[
+  webpack: (config) => ({
+    ...config,
+    module: {
+      ...config.module,
+      rules: [
+        ...config.module.rules,
         {
           test: /\.yml$/,
           type: "json",
@@ -13,7 +18,13 @@ module.exports = ({
           use: "@svgr/webpack",
         },
       ]
-    );
-    return config;
-  },
+    },
+    resolve: {
+      ...config.resolve,
+      alias: {
+        ...config.resolve.alias,
+        ['@']: path.join(__dirname, 'src'),
+      }
+    }
+  }),
 });

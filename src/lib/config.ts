@@ -2,6 +2,7 @@ import config from "../../config.json";
 
 type Config = {
   readonly base_url: string;
+  readonly logo: string;
   readonly site_title: string;
   readonly site_description: string;
   readonly site_keywords: { keyword: string }[];
