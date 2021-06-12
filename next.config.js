@@ -4,6 +4,7 @@ module.exports = ({
   future: {
     webpack5: true,
   },
+  exportPathMap: true,
   pageExtensions: ["tsx"],
   webpack: (config) => ({
     ...config,
