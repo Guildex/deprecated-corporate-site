@@ -1,9 +1,7 @@
-import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styled from 'styled-components'
 
-import { Button } from '@/components/atoms'
-import { colors } from '@/lib/constants'
+import { Button, Image } from '@/components/atoms'
 
 export const Container = styled.div``
 
