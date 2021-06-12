@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import { Button as AtomButton } from '@/components/atoms'
 
-export const Container = styled.form<{ netlify: boolean }>`
+export const Container = styled.form`
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
