@@ -34,7 +34,7 @@ const Required = styled.span`
 `
 
 type Props = {
-  as?: string
+  as?: 'textarea' | 'input'
   label: string
   name: HTMLInputElement['name']
   type: HTMLInputElement['type']
@@ -51,7 +51,7 @@ export const Input: React.FC<Props> = ({ as, label, ...rest }) => {
         {label}
         {rest.required && <Required>必須</Required>}
       </LabelText>
-      <InputComponent as={as} {...rest} />
+      <InputComponent as={as ?? 'input'} {...rest} />
     </Label>
   )
 }
