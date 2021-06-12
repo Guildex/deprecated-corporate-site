@@ -23,7 +23,13 @@ export const ContactForm: React.FC = () => {
   }
 
   return (
-    <Container name="contact" method="POST" data-netlify="true">
+    <Container
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field" 
+      data-netlify-recaptcha="true"
+    >
       <Input label="お名前" name="name" type="text" value={state.name} placeholder="例：ギルデックス太郎" required onChange={handleChange} />
       <Input label="件名" name="subject" type="text" value={state.subject} placeholder="例：○○○○○○について" required onChange={handleChange} />
       <Input label="メールアドレス" name="email" type="email" value={state.email} placeholder="例：info@guildex.co.jp" required onChange={handleChange} />
