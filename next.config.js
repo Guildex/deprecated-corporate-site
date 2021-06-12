@@ -6,6 +6,10 @@ module.exports = ({
   },
   exportPathMap: true,
   pageExtensions: ["tsx"],
+  images: {
+    loader: 'imgix',
+    path: '',
+  },
   webpack: (config) => ({
     ...config,
     module: {
