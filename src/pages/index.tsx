@@ -1,6 +1,6 @@
 import { Layout } from '@/components/organisms';
-import { Section } from '@/components/molecules'
-import { CompanyProfile } from '@/components/atoms'
+import { ContactForm, Section, ServiceList } from '@/components/molecules'
+import { CompanyProfile, Keyvisual } from '@/components/atoms'
 import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 
@@ -9,10 +9,16 @@ export default function Index() {
     <Layout>
       <BasicMeta url={"/"} />
       <OpenGraphMeta url={"/"} />
-      <Section head="会社概要">
+      <Keyvisual />
+      <Section id="service" head="サービス">
+        <ServiceList />
+      </Section>
+      <Section id="about" head="会社概要">
         <CompanyProfile />
       </Section>
-      <Section head="事業内容" />
+      <Section id="contact" head="お問い合わせ">
+        <ContactForm />
+      </Section>
     </Layout>
   );
 }

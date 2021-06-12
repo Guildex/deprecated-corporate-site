@@ -1,5 +1,6 @@
 import Head from 'next/head'
 
+import { GlobalStyle } from '@/components/atoms'
 import { Header, Footer } from '@/components/organisms'
 
 type Props = {
@@ -9,6 +10,7 @@ type Props = {
 export const Layout: React.FC<Props> = ({ children }) => {
   return (
     <div className="root">
+      <GlobalStyle />
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -1,20 +1,41 @@
 import * as React from 'react'
-import styled from 'styled-components'
+import Link from 'next/link'
 
-import config from '@/lib/config'
-
-const Container = styled.header`
-  padding: 20px 40px;
-`
-
-const Logo = styled.img`
-  width: 150px;
-`
+import { Container, LogoLink, Logo, Navigation, NavLink } from './styles'
 
 export const Header: React.FC = () => {
+  const links = [
+    {
+      id: 1,
+      href: 'service',
+      text: 'サービス',
+    },
+    {
+      id: 2,
+      href: 'about',
+      text: '会社概要',
+    },
+    {
+      id: 3,
+      href: 'contact',
+      text: 'お問い合わせ',
+    },
+  ]
+
   return (
     <Container>
-      <Logo src="/logo.png" />
+      <Link href="/">
+        <LogoLink>
+          <Logo src="/images/logo_white.png" />
+        </LogoLink>
+      </Link>
+      <Navigation>
+        {links.map(({ id, href, text }) => (
+          <NavLink key={id} to={href} smooth>
+            {text}
+          </NavLink>
+        ))}
+      </Navigation>
     </Container>
   )
 }
