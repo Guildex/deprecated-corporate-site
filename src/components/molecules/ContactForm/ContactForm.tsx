@@ -21,35 +21,16 @@ export const ContactForm: React.FC = () => {
       [name]: value,
     })
   }
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-
-    try {
-      const result = await fetch('/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: JSON.stringify({
-          'form-name': 'contact',
-          ...state,
-        }),
-      })
-
-      console.log(result)
-    } catch (error) {
-      console.error(error)
-    }
-  }
 
   return (
-    <form
+    <Container
       name="contact"
+      method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field" 
-      data-netlify-recaptcha="true"
-      onSubmit={handleSubmit}
     >
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="bot-field" />
       <Input label="お名前" name="name" type="text" value={state.name} placeholder="例：ギルデックス太郎" required onChange={handleChange} />
       <Input label="件名" name="subject" type="text" value={state.subject} placeholder="例：○○○○○○について" required onChange={handleChange} />
       <Input label="メールアドレス" name="email" type="email" value={state.email} placeholder="例：info@guildex.co.jp" required onChange={handleChange} />
@@ -59,6 +40,6 @@ export const ContactForm: React.FC = () => {
       <ButtonBox>
         <Button as="button">送信</Button>
       </ButtonBox>
-    </form>
+    </Container>
   )
 }
