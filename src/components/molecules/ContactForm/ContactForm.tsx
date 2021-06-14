@@ -30,7 +30,10 @@ export const ContactForm: React.FC = () => {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: JSON.stringify(state),
+        body: JSON.stringify({
+          'form-name': 'contact',
+          ...state,
+        }),
       })
 
       console.log(result)
