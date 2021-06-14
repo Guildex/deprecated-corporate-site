@@ -40,7 +40,7 @@ export const ContactForm: React.FC = () => {
   }
 
   return (
-    <Container
+    <form
       name="contact"
       data-netlify="true"
       data-netlify-honeypot="bot-field" 
@@ -56,6 +56,6 @@ export const ContactForm: React.FC = () => {
       <ButtonBox>
         <Button as="button">送信</Button>
       </ButtonBox>
-    </Container>
+    </form>
   )
 }
