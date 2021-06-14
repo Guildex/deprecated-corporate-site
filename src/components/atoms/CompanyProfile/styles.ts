@@ -1,9 +1,15 @@
 import styled from 'styled-components'
 
+import { media } from '@/styles/media'
+
 export const Container = styled.div``
 
 export const Record = styled.div`
   display: flex;
+
+  ${media.phone`
+    display: block;
+  `}
 
   &:not(:first-child) {
     margin-top: 20px;
@@ -16,6 +22,12 @@ export const Key = styled.p`
   font-weight: bold;
   text-align: right;
   box-sizing: border-box;
+
+  ${media.phone`
+    width: 100%;
+    padding-right: 0;
+    text-align: left;
+  `}
 `
 
 export const ListValue = styled.ul`
@@ -27,8 +39,16 @@ export const ListValue = styled.ul`
 
 export const Value = styled.p`
   width: 60%;
+
+  ${media.phone`
+    width: 100%;
+  `}
 `
 
 export const GoogleMapBox = styled.div`
   margin-top: 60px;
+
+  ${media.phone`
+    margin-top: 20px;
+  `}
 `

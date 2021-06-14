@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { Inner } from '@/components/atoms'
 import config from '@/lib/config'
-import { Container, Heading, TextBox, Text } from './styles'
+import { Container, Heading, Break, TextBox, Text } from './styles'
 
 export const Keyvisual: React.FC = () => {
   return (
@@ -18,7 +18,7 @@ export const Keyvisual: React.FC = () => {
               <span key={txt}>
                 {txt}
                 {index !== self.length - 1 && '、'}
-                <br />
+                <Break />
               </span>
             ))}
           </Text>

@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styled from 'styled-components'
 
+import { media } from '@/styles/media'
 import { Button, Image } from '@/components/atoms'
 
 export const Container = styled.div``
@@ -14,6 +15,10 @@ export const LinkBox = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 60px;
+
+  ${media.phone`
+    margin-top: 32px;
+  `}
 `
 
 export const Ico = styled(FontAwesomeIcon)`
@@ -24,9 +29,12 @@ export const Link = styled(Button)``
 
 export const Head = styled.h3`
   margin-bottom: 20px;
-  padding-bottom: 12px;
   font-size: 24px;
   font-weight: bold;
+
+  ${media.phone`
+    font-size: 20px;
+  `}
 `
 
 export const Desc = styled.div`
@@ -37,6 +45,12 @@ export const Desc = styled.div`
 export const ThumbBox = styled.figure`
   width: 40%;
   margin-right: 40px;
+
+  ${media.phone`
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  `}
 `
 
 export const Thumb = styled(Image)`
@@ -46,12 +60,20 @@ export const Thumb = styled(Image)`
 export const Detail = styled.div`
   display: flex;
   align-items: flex-start;
+
+  ${media.phone`
+    display: block;
+  `}
 `
 
 export const Service = styled.div`
   padding: 60px 40px;
   background-color: #f6f6f6;
   border-radius: 20px;
+
+  ${media.phone`
+    padding: 20px;
+  `}
 `
 
 export const TextBox = styled.div`

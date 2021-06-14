@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { media } from '@/styles/media'
+
 export const Container = styled.div`
   display: flex;
   justify-content: start;
@@ -10,6 +12,10 @@ export const Container = styled.div`
   background-size: cover;
   background-position: right;
   background-image: url('/images/keyvisual.jpg');
+
+  ${media.phone`
+    background-position: -1800px;
+  `}
 
   &::before,
   &::after {
@@ -40,14 +46,34 @@ export const Container = styled.div`
 export const Heading = styled.h1`
   font-size: 50px;
   font-weight: bold;
+
+  ${media.phone`
+    font-size: 24px;
+  `}
+`
+
+export const Break = styled.br`
+  display: block;
+
+  ${media.phone`
+    display: none;
+  `}
 `
 
 export const TextBox = styled.div`
   position: relative;
+
+  ${media.phone`
+    text-align: center;
+  `}
 `
 
 export const Text = styled.p`
   margin-top: 32px;
   font-size: 18px;;
   line-height: 2;
+
+  ${media.phone`
+    font-size: 16px;
+  `}
 `

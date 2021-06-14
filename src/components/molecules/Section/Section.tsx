@@ -1,24 +1,7 @@
 import * as React from 'react'
-import styled from 'styled-components'
-
 import { Inner } from '@/components/atoms'
 
-const Container = styled.section`
-  padding: 100px 0;
-`
-
-const ChildrenBox = styled.div`
-  padding: 100px 60px;
-  background-color: #fff;
-  border-radius: 20px;
-`
-
-const Head = styled.h3`
-  margin-bottom: 60px;
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-`
+import { Container, ChildrenBox, Head } from './styles'
 
 type Props = {
   id?: string

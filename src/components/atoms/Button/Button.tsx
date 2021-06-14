@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styled from 'styled-components'
 
-import { colors } from '@/lib/constants'
+import { colors } from '@/styles/constants'
 
 export const Button = styled(Link)`
   display: flex;

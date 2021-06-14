@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import { Link as ScrollLink } from 'react-scroll'
 
-import { colors } from '@/lib/constants'
+import { colors } from '@/styles/constants'
+import { media } from '@/styles/media'
 
 export const Container = styled.header`
   display: flex;
@@ -14,10 +15,19 @@ export const Container = styled.header`
   background-color: #000;
   box-sizing: border-box;
   z-index: 1;
+
+  ${media.phone`
+    justify-content: center;
+    padding: 16px 20px;
+  `}
 `
 
 export const Logo = styled.img`
   width: 150px;
+
+  ${media.phone`
+    width: 120px;
+  `}
 `
 
 export const LogoLink = styled.a``
@@ -25,6 +35,10 @@ export const LogoLink = styled.a``
 export const Navigation = styled.nav`
   display: flex;
   align-items: center;
+
+  ${media.phone`
+    display: none;
+  `}
 `
 
 export const NavLink = styled(ScrollLink)`
