@@ -21,20 +21,37 @@ export const ContactForm: React.FC = () => {
       [name]: value,
     })
   }
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+
+    try {
+      const result = await fetch('/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: JSON.stringify(state),
+      })
+
+      console.log(result)
+    } catch (error) {
+      console.error(error)
+    }
+  }
 
   return (
     <Container
       name="contact"
-      method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field" 
       data-netlify-recaptcha="true"
+      onSubmit={handleSubmit}
     >
       <Input label="お名前" name="name" type="text" value={state.name} placeholder="例：ギルデックス太郎" required onChange={handleChange} />
       <Input label="件名" name="subject" type="text" value={state.subject} placeholder="例：○○○○○○について" required onChange={handleChange} />
       <Input label="メールアドレス" name="email" type="email" value={state.email} placeholder="例：info@guildex.co.jp" required onChange={handleChange} />
       <Input label="会社名" name="organization" type="text" value={state.organization} placeholder="例：合同会社Guildex" onChange={handleChange} />
-      <Input label="電話番号" name="tel" type="tel" value={state.tel} placeholder="例：xxx-xxxx-xxxxx" onChange={handleChange} />
+      <Input label="電話番号" name="tel" type="tel" value={state.tel} placeholder="例：xxx-xxxx-xxxx" onChange={handleChange} />
       <Input as="textarea" label="お問い合わせ内容" name="body" type="text" value={state.body} placeholder="" required onChange={handleChange} />
       <ButtonBox>
         <Button as="button">送信</Button>
