@@ -13,8 +13,12 @@ export const Container = styled.div`
   background-position: right;
   background-image: url('/images/keyvisual.jpg');
 
+  ${media.tablet`
+    background-position: -50%;
+  `}
+
   ${media.phone`
-    background-position: -1800px;
+    background-position: -40%;
   `}
 
   &::before,
