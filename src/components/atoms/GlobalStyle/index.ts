@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
   html,
   body {
     line-height: 1.5;
-    font-family: 'YuGothic', '游ゴシック体';
+    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     background-color: #f1ebde;
   }
   
