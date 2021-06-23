@@ -26,6 +26,10 @@ export const CompanyProfile: React.FC = () => {
       value: '「Bmake（ビーメイク）」企画・開発・運営\nWebアプリケーション及びWebシステム受託開発',
     },
     {
+      key: '電話番号',
+      value: <a href="tel:03-6869-0527">03-6869-0527</a>,
+    },
+    {
       key: '住所',
       value: '〒102-0084 東京都千代田区二番町9-3 THE BASE 麹町 1F',
     },
@@ -37,7 +41,7 @@ export const CompanyProfile: React.FC = () => {
         {data.map(({ key, value }) => (
           <Record key={Math.random()}>
             <Key>{key}</Key>
-            {value.split('\n').length > 1
+            {typeof value === 'string' && value.split('\n').length > 1
               ? <ListValue>{value.split('\n').map(txt => <li key={txt}>{txt}</li>)}</ListValue>
               : <Value>{value}</Value>
             }

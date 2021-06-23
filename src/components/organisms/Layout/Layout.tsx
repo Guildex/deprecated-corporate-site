@@ -18,7 +18,6 @@ export const Layout: React.FC<Props> = ({ children }) => {
         <link rel="apple-touch-icon" href="/icon.png" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
         <meta name="theme-color" content="#fff" />
-        <meta name="google-site-verification" content="97q4DpWX2rActCfwXKkqjUajLxlPrRnJW-mX6EBANUU" />
       </Head>
       <Header />
       <main>{children}</main>

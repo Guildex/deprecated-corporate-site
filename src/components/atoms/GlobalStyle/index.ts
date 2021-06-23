@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { colors } from '@/styles/constants'
 
 export const GlobalStyle = createGlobalStyle`
   html,
@@ -14,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   a {
+    color: ${colors.blue};
     text-decoration: none;
   }
 
