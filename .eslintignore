@@ -1,0 +1,12 @@
+# next.js
+/.next/
+
+# don't ever lint node_modules
+node_modules
+yarn.lock
+
+# don't lint nyc coverage output
+coverage
+
+# don't ever lint public assets
+public

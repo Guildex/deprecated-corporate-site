@@ -10,6 +10,7 @@
     "ts:test": "tsc",
     "test": "jest",
     "format": "prettier --write './**/*.{js,ts,tsx,json}'",
+    "format:check": "prettier --check './**/*.{js,ts,tsx,json}'",
     "lint": "eslint src --ext .ts,.tsx .",
     "lint:error": "yarn lint --quiet"
   },
