@@ -1,1 +1,1 @@
-export * from './Keyvisual'
+export * from "./KeyVisual";

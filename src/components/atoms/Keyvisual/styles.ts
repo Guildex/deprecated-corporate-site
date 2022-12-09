@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-import { media } from '@/styles/media'
+import { media } from "@/styles/media";
 
 export const Container = styled.div`
   display: flex;
@@ -11,7 +11,7 @@ export const Container = styled.div`
   height: 100vh;
   background-size: cover;
   background-position: right;
-  background-image: url('/images/keyvisual.jpg');
+  background-image: url("/images/keyvisual.jpg");
 
   ${media.tablet`
     background-position: -50%;
@@ -24,7 +24,7 @@ export const Container = styled.div`
   &::before,
   &::after {
     display: block;
-    content: '';
+    content: "";
     position: absolute;
   }
 
@@ -45,7 +45,7 @@ export const Container = styled.div`
     border-bottom: 4px solid #fff;
     transform: rotate(-45deg);
   }
-`
+`;
 
 export const Heading = styled.h1`
   font-size: 50px;
@@ -54,7 +54,7 @@ export const Heading = styled.h1`
   ${media.phone`
     font-size: 24px;
   `}
-`
+`;
 
 export const Break = styled.br`
   display: block;
@@ -62,7 +62,7 @@ export const Break = styled.br`
   ${media.phone`
     display: none;
   `}
-`
+`;
 
 export const TextBox = styled.div`
   position: relative;
@@ -70,14 +70,14 @@ export const TextBox = styled.div`
   ${media.phone`
     text-align: center;
   `}
-`
+`;
 
 export const Text = styled.p`
   margin-top: 32px;
-  font-size: 18px;;
+  font-size: 18px;
   line-height: 2;
 
   ${media.phone`
     font-size: 16px;
   `}
-`
+`;

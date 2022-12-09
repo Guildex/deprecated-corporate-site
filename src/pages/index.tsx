@@ -1,9 +1,9 @@
-import { Layout } from '@/components/organisms';
-import { ContactForm, Section, ServiceList } from '@/components/molecules'
-import { CompanyProfile, Keyvisual } from '@/components/atoms'
+import { Layout } from "@/components/organisms";
+import { ContactForm, Section, ServiceList } from "@/components/molecules";
+import { CompanyProfile, KeyVisual } from "@/components/atoms";
 import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
-import TwitterCardMeta from '@/components/meta/TwitterCardMeta';
+import TwitterCardMeta from "@/components/meta/TwitterCardMeta";
 
 export default function Index() {
   return (
@@ -11,7 +11,7 @@ export default function Index() {
       <BasicMeta url={"/"} />
       <OpenGraphMeta url={"/"} />
       <TwitterCardMeta url={"/"} />
-      <Keyvisual />
+      <KeyVisual />
       <Section id="service" head="サービス">
         <ServiceList />
       </Section>

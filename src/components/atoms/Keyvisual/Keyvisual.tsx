@@ -1,10 +1,10 @@
-import * as React from 'react'
+import * as React from "react";
 
-import { Inner } from '@/components/atoms'
-import config from '@/lib/config'
-import { Container, Heading, Break, TextBox, Text } from './styles'
+import { Inner } from "@/components/atoms";
+import config from "@/lib/config";
+import { Container, Heading, Break, TextBox, Text } from "./styles";
 
-export const Keyvisual: React.FC = () => {
+export const KeyVisual: React.FC = () => {
   return (
     <Container>
       <Inner>
@@ -14,10 +14,10 @@ export const Keyvisual: React.FC = () => {
             <br />
           </Heading>
           <Text>
-            {config.site_description.split('、').map((txt, index, self) =>(
+            {config.site_description.split("、").map((txt, index, self) => (
               <span key={txt}>
                 {txt}
-                {index !== self.length - 1 && '、'}
+                {index !== self.length - 1 && "、"}
                 <Break />
               </span>
             ))}
@@ -25,5 +25,5 @@ export const Keyvisual: React.FC = () => {
         </TextBox>
       </Inner>
     </Container>
-  )
-}
+  );
+};
