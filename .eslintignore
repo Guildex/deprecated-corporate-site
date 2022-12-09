@@ -10,3 +10,9 @@ coverage
 
 # don't ever lint public assets
 public
+
+# config
+# ファイルは CommonJS モジュールです。ES モジュールに変換される可能性があります、のエラーを無視するために指定する
+next.config.js
+jest.config.js
+.eslintrc.js
