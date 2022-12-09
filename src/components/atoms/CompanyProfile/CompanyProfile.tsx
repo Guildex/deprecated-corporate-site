@@ -48,7 +48,7 @@ export const CompanyProfile: React.FC = () => {
     <Container>
       <Inner>
         {data.map(({ key, value }) => (
-          <Record key={Math.random()}>
+          <Record key={key}>
             <Key>{key}</Key>
             {typeof value === "string" && value.split("\n").length > 1 ? (
               <ListValue>
