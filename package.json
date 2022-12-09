@@ -9,7 +9,9 @@
     "export": "next build && next export -o ./dist",
     "ts:test": "tsc",
     "test": "jest",
-    "format": "prettier --write './**/*.{js,ts,tsx,json}'"
+    "format": "prettier --write './**/*.{js,ts,tsx,json}'",
+    "lint": "eslint src --ext .ts,.tsx .",
+    "lint:error": "yarn lint --quiet"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
