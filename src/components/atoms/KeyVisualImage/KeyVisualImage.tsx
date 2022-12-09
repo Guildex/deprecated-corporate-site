@@ -4,7 +4,7 @@ import { Inner } from "@/components/atoms";
 import config from "@/lib/config";
 import { Container, Heading, Break, TextBox, Text } from "./styles";
 
-export const KeyVisual: React.FC = () => {
+export const KeyVisualImage: React.FC = () => {
   return (
     <Container>
       <Inner>

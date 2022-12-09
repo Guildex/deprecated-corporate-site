@@ -6,4 +6,4 @@ export * from "./GlobalStyle";
 export * from "./Image";
 export * from "./Inner";
 export * from "./Input";
-export * from "./KeyVisual";
+export * from "./KeyVisualImage";

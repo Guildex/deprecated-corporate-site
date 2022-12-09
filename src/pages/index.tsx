@@ -1,6 +1,6 @@
 import { Layout } from "@/components/organisms";
 import { ContactForm, Section, ServiceList } from "@/components/molecules";
-import { CompanyProfile, KeyVisual } from "@/components/atoms";
+import { CompanyProfile, KeyVisualImage } from "@/components/atoms";
 import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "@/components/meta/TwitterCardMeta";
@@ -11,7 +11,7 @@ export default function Index() {
       <BasicMeta url={"/"} />
       <OpenGraphMeta url={"/"} />
       <TwitterCardMeta url={"/"} />
-      <KeyVisual />
+      <KeyVisualImage />
       <Section id="service" head="サービス">
         <ServiceList />
       </Section>
