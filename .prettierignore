@@ -1,0 +1,9 @@
+# next.js
+/.next/
+
+# testing
+coverage
+
+# dependencies
+node_modules
+yarn.lock
