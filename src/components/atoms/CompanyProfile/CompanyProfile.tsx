@@ -9,7 +9,7 @@ import {
   ListValue,
   GoogleMapBox,
 } from "./styles";
-import { formatMoneyJapaneseYen } from "@/utils/format-japanese-yen";
+import { formatMoneyJapaneseYen } from "@/utils/format-money-japanese-yen";
 
 export const CompanyProfile: React.FC = () => {
   const data = [
