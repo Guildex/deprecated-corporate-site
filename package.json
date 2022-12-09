@@ -8,7 +8,8 @@
     "start": "next start",
     "export": "next build && next export -o ./dist",
     "ts:test": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier --write './**/*.{js,ts,tsx,json}'"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",

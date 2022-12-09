@@ -1,15 +1,15 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import styled from 'styled-components'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styled from "styled-components";
 
-import { media } from '@/styles/media'
-import { Button, Image } from '@/components/atoms'
+import { media } from "@/styles/media";
+import { Button, Image } from "@/components/atoms";
 
-export const Container = styled.div``
+export const Container = styled.div``;
 
 export const LinkList = styled.div`
   display: flex;
   justify-content: center;
-`
+`;
 
 export const LinkBox = styled.div`
   display: flex;
@@ -19,13 +19,13 @@ export const LinkBox = styled.div`
   ${media.phone`
     margin-top: 32px;
   `}
-`
+`;
 
 export const Ico = styled(FontAwesomeIcon)`
   margin-left: 10px;
-`
+`;
 
-export const Link = styled(Button)``
+export const Link = styled(Button)``;
 
 export const Head = styled.h3`
   margin-bottom: 20px;
@@ -35,12 +35,12 @@ export const Head = styled.h3`
   ${media.phone`
     font-size: 20px;
   `}
-`
+`;
 
 export const Desc = styled.div`
   color: #8d8d8d;
   line-height: 2;
-`
+`;
 
 export const ThumbBox = styled.figure`
   width: 40%;
@@ -51,11 +51,11 @@ export const ThumbBox = styled.figure`
     margin-right: 0;
     margin-bottom: 40px;
   `}
-`
+`;
 
 export const Thumb = styled(Image)`
   border-radius: 20px;
-`
+`;
 
 export const Detail = styled.div`
   display: flex;
@@ -64,7 +64,7 @@ export const Detail = styled.div`
   ${media.phone`
     display: block;
   `}
-`
+`;
 
 export const Service = styled.div`
   padding: 60px 40px;
@@ -74,8 +74,8 @@ export const Service = styled.div`
   ${media.phone`
     padding: 20px;
   `}
-`
+`;
 
 export const TextBox = styled.div`
   flex: 1;
-`
+`;

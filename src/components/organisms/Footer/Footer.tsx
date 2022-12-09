@@ -1,7 +1,7 @@
-import * as React from 'react'
+import * as React from "react";
 
-import { Copyright } from '@/components/atoms'
-import { Container, CopyRightBox, Logo } from './styles'
+import { Copyright } from "@/components/atoms";
+import { Container, CopyRightBox, Logo } from "./styles";
 
 export const Footer: React.FC = () => {
   return (
@@ -11,5 +11,5 @@ export const Footer: React.FC = () => {
         <Copyright />
       </CopyRightBox>
     </Container>
-  )
-}
+  );
+};

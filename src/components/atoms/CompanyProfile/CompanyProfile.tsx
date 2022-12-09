@@ -1,14 +1,7 @@
 import * as React from "react";
 
 import { Inner } from "@/components/atoms";
-import {
-  Container,
-  Record,
-  Key,
-  Value,
-  ListValue,
-  GoogleMapBox,
-} from "./styles";
+import { Container, Record, Key, Value, ListValue, GoogleMapBox } from "./styles";
 import { formatMoneyJapaneseYen } from "@/utils/format-money-japanese-yen";
 
 export const CompanyProfile: React.FC = () => {
@@ -31,8 +24,7 @@ export const CompanyProfile: React.FC = () => {
     },
     {
       key: "事業内容",
-      value:
-        "「Bmake（ビーメイク）」企画・開発・運営\nWebアプリケーション及びWebシステム受託開発",
+      value: "「Bmake（ビーメイク）」企画・開発・運営\nWebアプリケーション及びWebシステム受託開発",
     },
     {
       key: "電話番号",

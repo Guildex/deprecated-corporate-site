@@ -1,13 +1,13 @@
-const path = require('path')
+const path = require("path");
 
-module.exports = ({
+module.exports = {
   future: {
     webpack5: true,
   },
   pageExtensions: ["tsx"],
   images: {
-    loader: 'imgix',
-    path: '',
+    loader: "imgix",
+    path: "",
   },
   webpack: (config) => ({
     ...config,
@@ -24,14 +24,14 @@ module.exports = ({
           test: /\.svg$/,
           use: "@svgr/webpack",
         },
-      ]
+      ],
     },
     resolve: {
       ...config.resolve,
       alias: {
         ...config.resolve.alias,
-        ['@']: path.join(__dirname, 'src'),
-      }
-    }
+        ["@"]: path.join(__dirname, "src"),
+      },
+    },
   }),
-});
+};

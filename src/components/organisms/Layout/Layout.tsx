@@ -1,7 +1,7 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-import { GlobalStyle } from '@/components/atoms'
-import { Header, Footer } from '@/components/organisms'
+import { GlobalStyle } from "@/components/atoms";
+import { Header, Footer } from "@/components/organisms";
 
 type Props = {
   children: React.ReactNode;
@@ -24,4 +24,4 @@ export const Layout: React.FC<Props> = ({ children }) => {
       <Footer />
     </div>
   );
-}
+};

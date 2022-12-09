@@ -13,15 +13,7 @@ type Props = {
   image?: string;
   description?: string;
 };
-export default function JsonLdMeta({
-  url,
-  title,
-  keywords,
-  date,
-  author,
-  image,
-  description,
-}: Props) {
+export default function JsonLdMeta({ url, title, keywords, date, author, image, description }: Props) {
   return (
     <Head>
       <script

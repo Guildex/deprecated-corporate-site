@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-import { colors } from '@/styles/constants'
-import { media } from '@/styles/media'
+import { colors } from "@/styles/constants";
+import { media } from "@/styles/media";
 
 export const Container = styled.footer`
   padding: 40px;
@@ -12,11 +12,11 @@ export const Container = styled.footer`
   ${media.phone`
     padding: 24px;
   `}
-`
+`;
 
 export const CopyRightBox = styled.div`
   margin-top: 20px;
-`
+`;
 
 export const Logo = styled.img`
   width: 150px;
@@ -24,4 +24,4 @@ export const Logo = styled.img`
   ${media.phone`
     width: 120px;
   `}
-`
+`;

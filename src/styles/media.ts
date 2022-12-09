@@ -1,7 +1,7 @@
 // @ts-nocheck
 
-import { css } from 'styled-components'
-import { sizes } from '@/styles/constants'
+import { css } from "styled-components";
+import { sizes } from "@/styles/constants";
 
 export const media = {
   desktop: (...args: Array<any>) => css`
@@ -19,4 +19,4 @@ export const media = {
       ${css(...args)};
     }
   `,
-}
+};
