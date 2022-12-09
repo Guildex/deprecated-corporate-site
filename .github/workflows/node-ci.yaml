@@ -46,6 +46,3 @@ jobs:
 
       - name: Jest and DOM Test
         run: yarn test
-
-      - name: Next Build
-        run: yarn build
