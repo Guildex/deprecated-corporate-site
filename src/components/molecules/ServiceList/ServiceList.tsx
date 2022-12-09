@@ -1,7 +1,5 @@
 import * as React from "react";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
-import { Inner } from "@/components/atoms";
 import { Container, LinkList, LinkBox, Link, Head, Desc, Service, Detail, ThumbBox, Thumb, TextBox } from "./styles";
 
 export const ServiceList: React.FC = () => {
