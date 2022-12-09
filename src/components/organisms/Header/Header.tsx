@@ -1,26 +1,26 @@
-import * as React from 'react'
-import Link from 'next/link'
+import * as React from "react";
+import Link from "next/link";
 
-import { Container, LogoLink, Logo, Navigation, NavLink } from './styles'
+import { Container, LogoLink, Logo, Navigation, NavLink } from "./styles";
 
 export const Header: React.FC = () => {
   const links = [
     {
       id: 1,
-      href: 'service',
-      text: 'サービス',
+      href: "service",
+      text: "サービス",
     },
     {
       id: 2,
-      href: 'about',
-      text: '会社概要',
+      href: "about",
+      text: "会社概要",
     },
     {
       id: 3,
-      href: 'contact',
-      text: 'お問い合わせ',
+      href: "contact",
+      text: "お問い合わせ",
     },
-  ]
+  ];
 
   return (
     <Container>
@@ -37,5 +37,5 @@ export const Header: React.FC = () => {
         ))}
       </Navigation>
     </Container>
-  )
-}
+  );
+};

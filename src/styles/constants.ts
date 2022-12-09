@@ -1,7 +1,7 @@
 export const colors = {
-  navy: '#1a222c',
-  blue: '#0494db',
-}
+  navy: "#1a222c",
+  blue: "#0494db",
+} as const;
 
 export const sizes = {
   media: {
@@ -9,4 +9,4 @@ export const sizes = {
     tablet: 480,
     phone: 320,
   },
-}
+} as const;

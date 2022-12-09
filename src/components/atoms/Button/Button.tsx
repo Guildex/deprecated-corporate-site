@@ -1,7 +1,7 @@
-import Link from 'next/link'
-import styled from 'styled-components'
+import Link from "next/link";
+import styled from "styled-components";
 
-import { colors } from '@/styles/constants'
+import { colors } from "@/styles/constants";
 
 export const Button = styled(Link)`
   display: flex;
@@ -21,4 +21,4 @@ export const Button = styled(Link)`
     background-color: #fff;
     border-color: ${colors.blue};
   }
-`
+`;

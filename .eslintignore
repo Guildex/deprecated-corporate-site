@@ -1,0 +1,18 @@
+# next.js
+/.next/
+
+# don't ever lint node_modules
+node_modules
+yarn.lock
+
+# don't lint nyc coverage output
+coverage
+
+# don't ever lint public assets
+public
+
+# config
+# ファイルは CommonJS モジュールです。ES モジュールに変換される可能性があります、のエラーを無視するために指定する
+next.config.js
+jest.config.js
+.eslintrc.js

@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-import { media } from '@/styles/media'
+import { media } from "@/styles/media";
 
-export const Container = styled.div``
+export const Container = styled.div``;
 
 export const Record = styled.div`
   display: flex;
@@ -14,7 +14,7 @@ export const Record = styled.div`
   &:not(:first-child) {
     margin-top: 20px;
   }
-`
+`;
 
 export const Key = styled.p`
   width: 40%;
@@ -28,14 +28,14 @@ export const Key = styled.p`
     padding-right: 0;
     text-align: left;
   `}
-`
+`;
 
 export const ListValue = styled.ul`
   margin-left: 1.4em;
   list-style: disc;
   padding: 0;
   box-sizing: border-box;
-`
+`;
 
 export const Value = styled.p`
   width: 60%;
@@ -43,7 +43,7 @@ export const Value = styled.p`
   ${media.phone`
     width: 100%;
   `}
-`
+`;
 
 export const GoogleMapBox = styled.div`
   margin-top: 60px;
@@ -51,4 +51,4 @@ export const GoogleMapBox = styled.div`
   ${media.phone`
     margin-top: 20px;
   `}
-`
+`;

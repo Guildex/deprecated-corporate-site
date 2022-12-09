@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from "react";
 
 export const Copyright: React.FC = () => {
   return (
@@ -6,4 +6,4 @@ export const Copyright: React.FC = () => {
       <p>&copy; 2021 Guildex LLC</p>
     </>
   );
-}
+};

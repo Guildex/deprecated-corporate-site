@@ -1,16 +1,16 @@
-import * as React from 'react'
-import { Inner } from '@/components/atoms'
+import * as React from "react";
+import { Inner } from "@/components/atoms";
 
-import { Container, ChildrenBox, Head } from './styles'
+import { Container, ChildrenBox, Head } from "./styles";
 
 type Props = {
-  id?: string
-  head: string
-}
+  id?: string;
+  head: string;
+};
 
 export const Section: React.FC<Props> = ({ id, head, children }) => {
   return (
-    <Container id={id ?? ''}>
+    <Container id={id ?? ""}>
       <Inner>
         <ChildrenBox>
           <Head>{head}</Head>
@@ -18,5 +18,5 @@ export const Section: React.FC<Props> = ({ id, head, children }) => {
         </ChildrenBox>
       </Inner>
     </Container>
-  )
-}
+  );
+};

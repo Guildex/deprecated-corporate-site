@@ -1,22 +1,20 @@
-// @ts-nocheck
-
-import { css } from 'styled-components'
-import { sizes } from '@/styles/constants'
+import { css } from "styled-components";
+import { sizes } from "@/styles/constants";
 
 export const media = {
-  desktop: (...args: Array<any>) => css`
+  desktop: (args: TemplateStringsArray) => css`
     @media (min-width: ${sizes.media.desktop}px) {
-      ${css(...args)};
+      ${css(args)};
     }
   `,
-  tablet: (...args: Array<any>) => css`
+  tablet: (args: TemplateStringsArray) => css`
     @media (min-width: ${sizes.media.tablet}px) and (max-width: ${sizes.media.desktop}px) {
-      ${css(...args)};
+      ${css(args)};
     }
   `,
-  phone: (...args: Array<any>) => css`
+  phone: (args: TemplateStringsArray) => css`
     @media (min-width: ${sizes.media.phone}px) and (max-width: ${sizes.media.tablet}px) {
-      ${css(...args)};
+      ${css(args)};
     }
   `,
-}
+};

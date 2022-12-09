@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-import { media } from '@/styles/media'
+import { media } from "@/styles/media";
 
 export const Container = styled.section`
   padding: 100px 0;
@@ -8,7 +8,7 @@ export const Container = styled.section`
   ${media.phone`
     padding: 40px 0;
   `}
-`
+`;
 
 export const ChildrenBox = styled.div`
   padding: 100px 60px;
@@ -18,7 +18,7 @@ export const ChildrenBox = styled.div`
   ${media.phone`
     padding: 40px 12px;
   `}
-`
+`;
 
 export const Head = styled.h3`
   margin-bottom: 60px;
@@ -30,4 +30,4 @@ export const Head = styled.h3`
     margin-bottom: 16px;
     font-size: 24px;
   `}
-`
+`;
