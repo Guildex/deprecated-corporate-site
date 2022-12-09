@@ -9,6 +9,7 @@ import {
   ListValue,
   GoogleMapBox,
 } from "./styles";
+import { formatMoneyJapaneseYen } from "@/utils/format-japanese-yen";
 
 export const CompanyProfile: React.FC = () => {
   const data = [
@@ -18,7 +19,7 @@ export const CompanyProfile: React.FC = () => {
     },
     {
       key: "資本金",
-      value: "210,000,0円",
+      value: `${formatMoneyJapaneseYen(2100000)}円`,
     },
     {
       key: "設立",
