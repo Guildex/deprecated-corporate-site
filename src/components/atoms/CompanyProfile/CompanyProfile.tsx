@@ -32,7 +32,7 @@ export const CompanyProfile: React.FC = () => {
     },
     {
       key: "住所",
-      value: "東京都渋谷区渋谷2-24-12 スクランブルスクエア",
+      value: "東京都渋谷区渋谷2-24-12 渋谷スクランブルスクエア",
     },
   ];
 
