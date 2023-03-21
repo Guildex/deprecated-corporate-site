@@ -27,7 +27,7 @@ export const COMPANY_DATA = [
   },
   {
     key: "事業内容",
-    value: "「Bmake（ビーメイク）」企画・開発・運営\nWebアプリケーション及びWebシステム受託開発",
+    value: "Webアプリケーション及びWebシステム受託開発",
   },
   {
     key: "住所",

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import { colors } from "@/styles/constants";
 
-export const Button = styled(Link)`
+export const Button = styled(Link)<{ isDisabled: boolean }>`
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -11,14 +11,21 @@ export const Button = styled(Link)`
   color: #fff;
   font-size: 16px;
   font-weight: bold;
-  border: 2px solid ${colors.blue};
-  background-color: ${colors.blue};
   border-radius: 30px;
   transition: all 0.3s;
 
-  &:hover {
-    color: ${colors.blue};
-    background-color: #fff;
-    border-color: ${colors.blue};
-  }
+  ${({ isDisabled }) => `
+    border: 2px solid ${isDisabled ? "#a4a4a7" : colors.blue};
+    background-color: ${isDisabled ? "#a4a4a7" : colors.blue};
+  `}
+
+  ${({ isDisabled }) =>
+    !isDisabled &&
+    `
+    &:hover {
+      color: ${colors.blue};
+      background-color: #fff;
+      border-color: ${colors.blue};
+    }
+  `}
 `;
