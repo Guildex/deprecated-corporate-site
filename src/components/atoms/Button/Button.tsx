@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import { colors } from "@/styles/constants";
 
-export const Button = styled(Link)<{ isDisabled: boolean }>`
+export const Button = styled(Link)<{ isDisabled?: boolean }>`
   display: flex;
   justify-content: center;
   align-items: flex-start;
