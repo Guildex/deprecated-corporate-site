@@ -15,7 +15,7 @@ export const COMPANY_DATA = [
   },
   {
     key: "資本金",
-    value: `${formatMoneyJapaneseYen(2100000)}円`,
+    value: `${formatMoneyJapaneseYen(3500000)}円`,
   },
   {
     key: "設立",
@@ -23,7 +23,7 @@ export const COMPANY_DATA = [
   },
   {
     key: "最高経営責任者",
-    value: "大橋 勇",
+    value: "木村一貴",
   },
   {
     key: "事業内容",

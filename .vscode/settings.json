@@ -20,5 +20,5 @@
     "**/node_modules": true,
     "**/yarn.lock": true
   },
-  "cSpell.words": ["Parens"]
+  "cSpell.words": ["Guildex", "Parens"]
 }
