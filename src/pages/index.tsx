@@ -6,8 +6,6 @@ import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "@/components/meta/TwitterCardMeta";
 
 export default function Index() {
-  console.log('_');
-
   return (
     <Layout>
       <BasicMeta url={"/"} />

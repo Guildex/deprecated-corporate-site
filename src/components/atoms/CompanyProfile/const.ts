@@ -15,7 +15,7 @@ export const COMPANY_DATA = [
   },
   {
     key: "資本金",
-    value: `${formatMoneyJapaneseYen(3500000)}円`,
+    value: `${formatMoneyJapaneseYen(4500000)}円`,
   },
   {
     key: "設立",
