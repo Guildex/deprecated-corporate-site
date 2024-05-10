@@ -7,8 +7,8 @@
   "typescript.inlayHints.parameterNames.enabled": "all",
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "editor.codeActionsOnSave": {
-    "source.addMissingImports": true, // importの自動追加
-    "source.fixAll.eslint": true
+    "source.addMissingImports": "explicit",
+    "source.fixAll.eslint": "explicit"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -20,5 +20,5 @@
     "**/node_modules": true,
     "**/yarn.lock": true
   },
-  "cSpell.words": ["Guildex", "Parens"]
+  "cSpell.words": ["Bmake", "Frappy", "Guildex", "Parens"]
 }
