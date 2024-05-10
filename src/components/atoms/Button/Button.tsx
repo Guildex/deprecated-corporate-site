@@ -17,12 +17,14 @@ export const Button = styled(Link)<{ isDisabled?: boolean }>`
   ${({ isDisabled }) => `
     border: 2px solid ${isDisabled ? "#a4a4a7" : colors.blue};
     background-color: ${isDisabled ? "#a4a4a7" : colors.blue};
+    pointer-events: none;
   `}
 
   ${({ isDisabled }) =>
     !isDisabled &&
     `
     &:hover {
+      cursor: pointer;
       color: ${colors.blue};
       background-color: #fff;
       border-color: ${colors.blue};
