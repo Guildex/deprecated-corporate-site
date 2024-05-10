@@ -30,7 +30,9 @@ export const Logo = styled.img`
   `}
 `;
 
-export const LogoLink = styled.a``;
+export const LogoLink = styled.a`
+  cursor: pointer;
+`;
 
 export const Navigation = styled.nav`
   display: flex;
