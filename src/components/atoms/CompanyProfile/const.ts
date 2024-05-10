@@ -22,12 +22,16 @@ export const COMPANY_DATA = [
     value: "2021年5月25日",
   },
   {
-    key: "最高経営責任者",
+    key: "代表社員",
     value: "木村一貴",
   },
   {
+    key: "従業員数",
+    value: "5名",
+  },
+  {
     key: "事業内容",
-    value: "Webアプリケーション及びWebシステム受託開発",
+    value: `48時間限定マッチングアプリ「Frappy」の開発および運営\nWebアプリケーション及びWebシステムの受託開発\nネイティブアプリの受託開発（iOS, Android）`,
   },
   {
     key: "住所",
